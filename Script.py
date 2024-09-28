@@ -1,12 +1,12 @@
 # Load the model
 model = tf.keras.models.load_model("model_name")
 
-img_height = "img_height"
-img_width = "img_width"
+image_H = "img_height"
+image_W = "img_width"
 
 # Load the image
 img_path = r"C:\Users\tanma\Pictures\happy.jpg"
-img = image.load_img(img_path,target_size=(img_height, img_width))  # Use the same height and width as in your model
+img = image.load_img(img_path,target_size=(int(image_H), int(image_W)))  # Use the same height and width as in your model
 
 # Convert the image to an array
 img_array = image.img_to_array(img)
