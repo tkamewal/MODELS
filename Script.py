@@ -1,5 +1,8 @@
 # Load the model
-model = tf.keras.models.load_model("Sad_And_happy_More.keras")
+model = tf.keras.models.load_model("model_name")
+
+img_height = "img_height"
+img_width = "img_width"
 
 # Load the image
 img_path = r"C:\Users\tanma\Pictures\happy.jpg"
